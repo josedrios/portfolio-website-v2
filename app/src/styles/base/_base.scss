@@ -1,12 +1,9 @@
 body {
-  padding: $spacing-lg;
   background-color: $background-color;
 }
 
 #website-container {
-  height: 100%;
-  margin: auto;
-  // the extra 1 is for the right border of the grid
+  margin: $spacing-md auto;
   max-width: 1001px;
   background-image: linear-gradient($grid-color 1px, transparent 1px),
     linear-gradient(90deg, $grid-color 1px, transparent 1px);
