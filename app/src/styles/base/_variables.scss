@@ -1,10 +1,14 @@
 // COLORS
+$background-color: #faf9ec;
+$grid-color: rgba(133, 195, 245, 0.8);
+$primary-color: rgb(255, 140, 0);
 
 // SPACINGS
-$spacing-unit: 16px;
-$spacing-xxs: calc(0.25 * $spacing-unit);
-$spacing-xs: calc(.5 * $spacing-unit);
-$spacing-sm: calc(0.75 * $spacing-unit);
-$spacing-md: calc(1.25 * $spacing-unit);
-$spacing-lg: calc(2 * $spacing-unit);
-$spacing-xl: calc(3.25 * $spacing-unit);
+$spacing-unit: 20px;
+
+// add or remove if needed
+$spacing-xs: calc(.25 * $spacing-unit);
+$spacing-sm: calc(.5 * $spacing-unit);
+$spacing-md: $spacing-unit;
+$spacing-lg: calc(1.5 * $spacing-unit);
+$spacing-xl: calc(2 * $spacing-unit);
