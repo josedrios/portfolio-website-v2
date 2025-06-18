@@ -12,7 +12,7 @@ export default function Header() {
 
 function LeftHeader() {
     return (
-        <div className="left-header">
+        <div id="left-header">
             <div>
                 <h1>
                     josedrios<span>.</span>

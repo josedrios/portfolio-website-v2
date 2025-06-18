@@ -4,14 +4,13 @@ header {
     width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header {
         flex-direction: column;
     }
 }
 
-.left-header {
-    flex: 1;
+#left-header {
     display: flex;
     flex-direction: row;
 }
@@ -21,34 +20,36 @@ header {
 }
 
 #icon-container {
-    border: 1px solid red;
     position: relative;
     right: 10px;
     height: 140px;
 
     .doodle-icon {
-        border: 1px solid lime;
         height: 140px;
     }
 
     #icon-change-hitbox {
         position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 60px;
-        width: 60px;
-        background-color: red;
+        left: 15px;
+        bottom: 13px;
+        height: 65px;
+        width: 65px;
+        // icon change hitbox
+        background-color: rgba(255, 0, 0, 0.207);
     }
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    flex: 1;
+    align-items: flex-end;
 
     .nav-button {
         display: block;
         text-decoration: none;
+        width: 100px;
+        margin-right: $spacing-md;
     }
 
     .asterisk {
@@ -68,17 +69,22 @@ nav {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     nav {
         width: 100%;
         justify-content: space-around;
         flex-direction: row;
-    }
-}
 
-.icon {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    vertical-align: top;
+        .nav-button {
+            width: auto;
+        }
+    }
+
+    #left-header {
+        width: 100%;
+
+        #icon-container {
+            margin-left: auto;
+        }
+    }
 }
