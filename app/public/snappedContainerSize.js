@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // HEIGHT SET UP
 
         if (container.parentElement) {
-            // Reset container height to auto to get its natural height 
+            // Reset container height to auto to get its natural height
             // (for comparison reasons that you will see later on)
             const originalHeightStyle = container.style.height; // Store for potential fallback
             container.style.height = 'auto';
@@ -80,4 +80,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Recalculate on window resize
     window.addEventListener('resize', setContainerDimensions);
+
+    const observer = new MutationObserver((mutationsList, observer) => {
+        if (document.getElementById('design-page')) {
+            console.log('Design System page loaded, resizing.');
+            setContainerDimensions();
+        }
+        if (document.getElementById('home-page')) {
+            console.log('Home page loaded, resizing.');
+            setContainerDimensions();
+        }
+        if (document.getElementById('projects-page')) {
+            console.log('Projects page loaded, resizing.');
+            setContainerDimensions();
+        }
+        if (document.getElementById('blog-page')) {
+            console.log('Blog page loaded, resizing.');
+            setContainerDimensions();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
 });

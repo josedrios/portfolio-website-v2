@@ -47,7 +47,6 @@ h1,
 h2,
 h3 {
     font-weight: 200;
-    // outline: 1px solid blue;
 }
 
 h1 {
@@ -64,11 +63,23 @@ h2 {
     font-size: $font-large;
 }
 
-p {
+p,a {
     font-size: $font-base;
-    padding-top: 4px;
+    padding-top: 5px;
     line-height: 20px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
+}
+
+a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration-color: $primary-color;
+  }
+}
+
+.standalone-link {
+  display: inline-block;
 }
 
 span {
@@ -79,6 +90,5 @@ span {
     font-size: $font-small;
     padding-top: 6px;
     padding-bottom: 14px;
-    // outline: 1px solid gray;
     margin-bottom: 0px;
 }
