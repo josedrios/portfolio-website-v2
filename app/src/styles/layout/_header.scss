@@ -1,9 +1,14 @@
 header {
-
+    outline: 1px solid lime;
+    display: flex;
+    flex-direction: row;
 }
 
 .left-header {
-    position: relative;
+    outline: 3px solid cyan;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
 }
 
 #face-click-prompt {
@@ -11,8 +16,12 @@ header {
 }
 
 .doodle-icon {
-    // position: absolute;
-    // left: 240px;
-    // outline: 1px solid purple;
+    position: relative;
     height: 140px;
+    border: 1px solid green;
+}
+
+nav {
+    min-width: 300px;
+    outline: 3px solid red;
 }
