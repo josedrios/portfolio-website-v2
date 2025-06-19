@@ -52,7 +52,7 @@ function LeftHeader() {
                     </i>
                 </p>
                 {imageOverlay !== null ? (
-                    <p id="overlay-phrase">{imageOverlay.phrase}</p>
+                    <p className='small-text' id="overlay-phrase">└── {' '}{imageOverlay.phrase}</p>
                 ) : (
                     ''
                 )}

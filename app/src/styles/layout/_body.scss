@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-xl;
+}
+
+aside {
+    width: 300px;
+    order: 2;
+}
+
+.content {
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        order: 0;
+    }
+}

@@ -9,21 +9,34 @@ import {
 export default function DesignSystem() {
     return (
         <main id="design-page">
-            <h2>
-                <span>//</span>Design System
-            </h2>
-            <p id="design-system-description">
-                I thought it would be cool to show the bare bones of my portfolio website.
-                My main goal for this project was to keep things very basic. I decided not
-                to go overboard in the UI department because it is so easy to do so now a
-                days. I only kept the necessary UI and text components. I like this new
-                system. It feels really nice to keep things <span>simple</span> and{' '}
-                <span>neat</span>.
-            </p>
-            <Text />
-            <Spacing />
-            <Icons />
-            <Link />
+            <aside>
+                <h2>
+                    <span>//</span>Design System
+                </h2>
+                <div className="design-system-description">
+                    <p>
+                        I thought it would be cool to show the bare bones of my portfolio
+                        website. My main goal for this project was to keep things very
+                        basic.
+                    </p>
+                    <p>
+                        I decided not to go overboard in the UI department because it is
+                        so easy to do so now a days. I only kept the necessary UI and text
+                        components. I like this new system. It feels really nice to keep
+                        things <span>simple</span> and <span>neat</span>.
+                    </p>
+                </div>
+            </aside>
+            <div className="content">
+                <Text />
+                <Spacing />
+                <Icons />
+                <Link />
+                <i>
+                    {' '}
+                    <p>Talk about the face logo and the overlays and Commit Mono</p>
+                </i>
+            </div>
         </main>
     );
 }

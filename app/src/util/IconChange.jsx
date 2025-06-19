@@ -52,7 +52,7 @@ const imageData = [
         path: '/images/single_leaf_hat.png',
     },
     {
-        phrase: 'always a party at josedrios.com',
+        phrase: 'its a party at josedrios.com',
         path: '/images/party_hat.png',
     },
     {
