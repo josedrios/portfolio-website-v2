@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Apply the chosen final snapped height
             container.style.height = `${finalSnappedHeight + 1}px`;
-            console.log(container.style.height);
         } else {
             console.warn(
                 'Parent element for #website-container not found for height calculation.'
@@ -83,19 +82,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new MutationObserver((mutationsList, observer) => {
         if (document.getElementById('design-page')) {
-            console.log('Design System page loaded, resizing.');
             setContainerDimensions();
         }
         if (document.getElementById('home-page')) {
-            console.log('Home page loaded, resizing.');
             setContainerDimensions();
         }
         if (document.getElementById('projects-page')) {
-            console.log('Projects page loaded, resizing.');
             setContainerDimensions();
         }
         if (document.getElementById('blog-page')) {
-            console.log('Blog page loaded, resizing.');
             setContainerDimensions();
         }
     });

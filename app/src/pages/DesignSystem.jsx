@@ -20,7 +20,6 @@ export default function DesignSystem() {
                 system. It feels really nice to keep things <span>simple</span> and{' '}
                 <span>neat</span>.
             </p>
-            <p></p>
             <Text />
             <Spacing />
             <Icons />

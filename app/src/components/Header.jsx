@@ -13,45 +13,32 @@ export default function Header() {
 
 function LeftHeader() {
     const [imageOverlay, setImageOverlay] = useState(null);
-    const [chosenOverlays, setChosenOverlays] = useState([]);
+    const [shuffledOverlays, setShuffledOverlays] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    // const randomOverlay = () => {
-    //     if (chosenOverlays.length === imageData.length) {
-    //         console.log("All overlays have been utilized")
-    //     }
+    // on load, shuffle the order of the overlays
+    useEffect(() => {
+        reshuffleOverlays();
+    }, []);
 
-    //     let randomIndex;
-    //     // if the random index we are getting has already been used
-    //     let takenIndex = true;
+    const reshuffleOverlays = () => {
+        const shuffled = [...imageData].sort(() => Math.random() - 0.5);
+        setShuffledOverlays(shuffled);
+        setCurrentIndex(0);
+    };
 
-    //     while (takenIndex) {
-    //         randomIndex = Math.floor(Math.random() * imageData.length);
-    //         takenIndex = chosenOverlays.includes(randomIndex)
-    //     }
+    const handleClick = () => {
+        if (shuffledOverlays.length === 0) return;
 
-    //     return randomIndex;
-    // };
+        const nextOverlay = shuffledOverlays[currentIndex];
+        setImageOverlay(nextOverlay);
 
-    // const handleOverlayChange = () => {
-    //     if(imageData.length === 0) {
-    //         console.warn("No overlays found for website logo :(")
-    //         setImageOverlay(null);
-    //         return;
-    //     }
-
-    //     let usedIndexes = chosenOverlays;
-        
-    //     if(usedIndexes.length === imageData.length) {
-    //         console.log("All overlays have been used. Resetting chosen overlay list");
-    //         usedIndexes = []
-    //     }
-
-    //     let newOverlayIndex = randomOverlay(usedIndexes);
-
-    //     setImageOverlay(imageData[newOverlayIndex]);
-
-    //     setChosenOverlays([...usedIndexes, newOverlayIndex]);
-    // }
+        if (currentIndex + 1 >= shuffledOverlays.length) {
+            reshuffleOverlays();
+        } else {
+            setCurrentIndex(prev => prev + 1);
+        }
+    };
 
     return (
         <div id="left-header">
@@ -75,7 +62,7 @@ function LeftHeader() {
                 <button
                     id="icon-change-hitbox"
                     onClick={() => {
-                        // handleOverlayChange()
+                        handleClick();
                     }}
                 />
             </div>
