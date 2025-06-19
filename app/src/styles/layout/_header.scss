@@ -28,6 +28,15 @@ header {
         height: 140px;
     }
 
+    .doodle-icon-overlay {
+        position: absolute;
+        height: 140px;
+        z-index: 100;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+
     #icon-change-hitbox {
         position: absolute;
         left: 15px;
@@ -35,7 +44,7 @@ header {
         height: 65px;
         width: 65px;
         // icon change hitbox
-        background-color: rgba(255, 0, 0, 0.207);
+        // background-color: rgba(255, 0, 0, 0.207);
     }
 }
 

@@ -63,23 +63,31 @@ h2 {
     font-size: $font-large;
 }
 
-p,a {
+h3 {
     font-size: $font-base;
-    padding-top: 5px;
+    padding-top: 4.6px;
     line-height: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 15.4px;
+}
+
+p,
+a {
+    font-size: $font-base;
+    padding-top: 4.4px;
+    line-height: 20px;
+    padding-bottom: 15.6px;
 }
 
 a {
-  text-decoration: underline;
+    text-decoration: underline;
 
-  &:hover {
-    text-decoration-color: $primary-color;
-  }
+    &:hover {
+        text-decoration-color: $primary-color;
+    }
 }
 
 .standalone-link {
-  display: inline-block;
+    display: inline-block;
 }
 
 span {

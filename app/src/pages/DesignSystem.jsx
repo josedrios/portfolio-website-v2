@@ -8,7 +8,19 @@ import {
 
 export default function DesignSystem() {
     return (
-        <main id='design-page'>
+        <main id="design-page">
+            <h2>
+                <span>//</span>Design System
+            </h2>
+            <p id="design-system-description">
+                I thought it would be cool to show the bare bones of my portfolio website.
+                My main goal for this project was to keep things very basic. I decided not
+                to go overboard in the UI department because it is so easy to do so now a
+                days. I only kept the necessary UI and text components. I like this new
+                system. It feels really nice to keep things <span>simple</span> and{' '}
+                <span>neat</span>.
+            </p>
+            <p></p>
             <Text />
             <Spacing />
             <Icons />
@@ -22,19 +34,16 @@ function Text() {
         <div>
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
-            <p>
-                This is an example sentence to show how a p tag would look. Im going to
-                write a little more gibberish just to show its text wrapping capabilities
-                and how it would look like in the UI.
-            </p>
+            <h3>Heading 3</h3>
+            <p>This is a sentence inside a paragraph tag</p>
             <p>
                 This is a <span>span</span> word in a sentence
             </p>
             <p>
-                This is a <strong>bold</strong> word in a sentence
+                This is a <i>italic</i> word in a sentence
             </p>
             <p>
-                This is a <i>italic</i> word in a sentence
+                This is a <strong>bold</strong> word in a sentence
             </p>
             <p>
                 This is a{' '}
