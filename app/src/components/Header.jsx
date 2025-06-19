@@ -51,6 +51,11 @@ function LeftHeader() {
                         <strong>don't spam click my face...</strong>
                     </i>
                 </p>
+                {imageOverlay !== null ? (
+                    <p id="overlay-phrase">{imageOverlay.phrase}</p>
+                ) : (
+                    ''
+                )}
             </div>
             <div id="icon-container">
                 <img src="/images/base.png" alt="" className="doodle-icon" />

@@ -48,6 +48,10 @@ header {
     }
 }
 
+#overlay-phrase {
+    font-size: $font-small;
+}
+
 nav {
     display: flex;
     flex-direction: column;

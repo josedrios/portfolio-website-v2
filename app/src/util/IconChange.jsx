@@ -1,62 +1,62 @@
 const imageData = [
     {
-        name: 'wizard_hat.png',
+        phrase: 'wizard drip',
         path: '/images/wizard_hat.png',
     },
     {
-        name: 'light_bulb.png',
+        phrase: '"grid paper website"',
         path: '/images/light_bulb.png',
     },
     {
-        name: 'headphones.png',
+        phrase: 'weird fishes',
         path: '/images/headphones.png',
     },
     {
-        name: 'chopper_hat.png',
+        phrase: 'tony tony',
         path: '/images/chopper_hat.png',
     },
     {
-        name: 'kratos_face_paint.png',
+        phrase: 'havent played yet',
         path: '/images/kratos_face_paint.png',
     },
     {
-        name: 'halo.png',
+        phrase: 'me 24/7',
         path: '/images/halo.png',
     },
     {
-        name: 'luffy.png',
+        phrase: 'one piece of advice',
         path: '/images/luffy.png',
     },
     {
-        name: 'kamina.png',
+        phrase: 'real one',
         path: '/images/kamina.png',
     },
     {
-        name: 'doffys_glasses.png',
+        phrase: 'black airforces',
         path: '/images/doffys_glasses.png',
     },
     {
-        name: 'open_brain.png',
+        phrase: 'be open minded',
         path: '/images/open_brain.png',
     },
     {
-        name: 'louise_hat.png',
+        phrase: 'louises burgers',
         path: '/images/louise_hat.png',
     },
     {
-        name: 'plunger_hat.png',
+        phrase: 'i look quiet flush',
         path: '/images/plunger_hat.png',
     },
     {
-        name: 'single_leaf_hat.png',
+        phrase: 'growth mindset',
         path: '/images/single_leaf_hat.png',
     },
     {
-        name: 'party_hat.png',
+        phrase: 'always a party at josedrios.com',
         path: '/images/party_hat.png',
     },
     {
-        name: 'big_ears.png',
+        phrase: 'say that one more time',
         path: '/images/big_ears.png',
     },
 ];
