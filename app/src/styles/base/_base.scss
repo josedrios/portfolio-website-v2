@@ -8,7 +8,7 @@ body {
 
 #website-container {
   margin: $spacing-md auto;
-  max-width: 1001px;
+  max-width: 901px;
   background-image: linear-gradient($grid-color 1px, transparent 1px),
     linear-gradient(90deg, $grid-color 1px, transparent 1px);
   background-size: 20px 20px;
@@ -16,6 +16,7 @@ body {
 
 main {
   margin-top: $spacing-xl;
+  // padding: 0 $spacing-md;
 }
 
 button {
@@ -33,39 +34,4 @@ button {
     padding: 0;
     margin: 0;
     vertical-align: top;
-}
-
-// design system related, move out
-.spacing-xs {
-  background-color: $primary-color;
-  width: $spacing-xs;
-  height: $spacing-xs;
-  margin-bottom: calc(3 * $spacing-xs + $spacing-sm);
-}
-
-.spacing-sm {
-  background-color: $primary-color;
-  width: $spacing-sm;
-  height: $spacing-sm;
-  margin-bottom: $spacing-md;
-}
-
-.spacing-md {
-  background-color: $primary-color;
-  width: $spacing-md;
-  height: $spacing-md;
-  margin-bottom: $spacing-md;
-}
-
-.spacing-lg {
-  background-color: $primary-color;
-  width: $spacing-lg;
-  height: $spacing-lg;
-  margin-bottom: calc($spacing-lg * 1/3 + $spacing-md);
-}
-
-.spacing-xl {
-  background-color: $primary-color;
-  width: $spacing-xl;
-  height: $spacing-xl;
 }

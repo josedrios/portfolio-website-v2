@@ -2,7 +2,7 @@ import './styles/main.scss';
 import Header from './components/Header';
 import DesignSystem from './pages/DesignSystem';
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
+import About from './pages/About';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 
@@ -11,7 +11,7 @@ function App() {
         <div id="website-container">
             <Header />
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<About/>}/>
                 <Route path="/projects" element={<Projects/>}/>
                 <Route path="/design" element={<DesignSystem/>}/>
                 <Route path="/blog" element={<Blog/>}/>
