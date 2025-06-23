@@ -18,9 +18,10 @@ export default function DesignSystem() {
                     main goal for this project was to keep things very basic.
                 </p>
                 <p>
-                    I only kept the necessary UI and text components. Lately I have been trying to adapt to this new line of thinking that less is more. I like this new
-                    system, it feels really nice to keep things <span>simple</span> and{' '}
-                    <span>neat</span>.
+                    I only kept the necessary UI and text components. Lately I have been
+                    trying to adapt to this new line of thinking that less is more. I like
+                    this new system, it feels really nice to keep things{' '}
+                    <span>simple</span> and <span>neat</span>.
                 </p>
             </aside>
             <div className="content">
@@ -31,6 +32,11 @@ export default function DesignSystem() {
                 <Text />
                 <Link />
                 <Icons />
+                <p>
+                    Hopefully me showing you my thought process for the design of this
+                    website was insightful. If you have any questions keep them to
+                    yourself. Or you can contact me as well, that works too.
+                </p>
             </div>
         </main>
     );
@@ -68,8 +74,8 @@ function Font() {
                 <a href="https://commitmono.com/" target="_blank">
                     here
                 </a>
-                . The website Eigil Nikolajsen made for this font is absolutely
-                beautifully simple and super fun to interact with.
+                . The website <span>Eigil Nikolajsen</span> made for this font is
+                absolutely beautifully simple and super fun to interact with.
             </p>
         </div>
     );
@@ -79,7 +85,32 @@ function Logo() {
     return (
         <div>
             <h2>Logo</h2>
-            <p>face logo related</p>
+            <p>
+                To make the website very <span>distinguishable</span>, I needed to
+                incorporate a logo that would create a unique identity, establishing my
+                website's
+                <span>individuality</span>. The best way I found I can do this was to make
+                a doodle of myself as the logo.
+            </p>
+            <p>
+                <i>INSERT LOGO FACE IMAGE</i>
+            </p>
+            <p>
+                A fun feature that I wanted to include was variation in the logo by adding
+                overlays to it when clicked as well as pairing it with a simple phrase. I
+                went back to the drawing board, literally, and drew different hats and
+                head gears and I would just place them on top of the logo. I feel like
+                this adds a sense of <span>hidden interactivity</span> that the user would
+                possibly find interesting. All drawings were done on <span>Krita</span>, a
+                free open source graphic editor that can be found{' '}
+                <a href="https://krita.org/en/" target="_blank">
+                    here
+                </a>
+                . Here are some of my favorite logo overlays:
+            </p>
+            <p>
+                <i>INSERT LOGO OVERLAY IMAGES</i>
+            </p>
         </div>
     );
 }
