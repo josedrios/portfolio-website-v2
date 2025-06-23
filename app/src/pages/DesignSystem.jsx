@@ -18,35 +18,76 @@ export default function DesignSystem() {
                     main goal for this project was to keep things very basic.
                 </p>
                 <p>
-                    I decided not to go overboard in the UI department because it is so
-                    easy to do so now a days. I only kept the necessary UI and text
-                    components. I like this new system. It feels really nice to keep
-                    things <span>simple</span> and <span>neat</span>.
+                    I only kept the necessary UI and text components. Lately I have been trying to adapt to this new line of thinking that less is more. I like this new
+                    system, it feels really nice to keep things <span>simple</span> and{' '}
+                    <span>neat</span>.
                 </p>
             </aside>
             <div className="content">
-                <p>
-                    <i>talk about the background here</i>
-                </p>
-                <p>
-                    <i>talk about having no buttons</i>
-                </p>
+                <Background />
+                <Font />
+                <Logo />
                 <Spacing />
                 <Text />
                 <Link />
                 <Icons />
-                <i>
-                    {' '}
-                    <p>Talk about the face logo and the overlays and Commit Mono</p>
-                </i>
             </div>
         </main>
+    );
+}
+
+function Background() {
+    return (
+        <div>
+            <h2>Background</h2>
+            <p>
+                Out of all the themes and ideas I conjured up for this website, a{' '}
+                <span>graph paper themed</span> website is what locked me in. It is kind
+                of funny because while I was writing all the potential ideas I could use
+                down onto my graph papered notebook, it turns out the idea I would end up
+                going with was already staring me right in the face.
+            </p>
+        </div>
+    );
+}
+
+function Font() {
+    return (
+        <div>
+            <h2>Font</h2>
+            <p>
+                Now with the background chosen I needed to pair it with the perfect font.
+                What I went with was something that was not too sharp because it would
+                look very stoic and something not to roundish and playful that would come
+                off as immature. <span>Commit Mono</span> was exactly what I was looking
+                for and the biggest plus was that it was free, not like those other fonts
+                that charge $900 per font character.
+            </p>
+            <p>
+                If you also want to utilize this font you can find it{' '}
+                <a href="https://commitmono.com/" target="_blank">
+                    here
+                </a>
+                . The website Eigil Nikolajsen made for this font is absolutely
+                beautifully simple and super fun to interact with.
+            </p>
+        </div>
+    );
+}
+
+function Logo() {
+    return (
+        <div>
+            <h2>Logo</h2>
+            <p>face logo related</p>
+        </div>
     );
 }
 
 function Spacing() {
     return (
         <div>
+            <h2>Spacing</h2>
             <p>
                 Spacing should be kept very uniform and predictable. The increments I
                 chose were relative to a <span>single grid cell</span>. So the multiples
@@ -66,6 +107,7 @@ function Spacing() {
 function Text() {
     return (
         <div>
+            <h2>Text</h2>
             <p>
                 I decided to keep the text variation/spread <span>very basic</span> so I
                 don't get overwhelmed by the options I have. I feel that if you have to
@@ -105,6 +147,7 @@ function Text() {
 function Link() {
     return (
         <div id="link-design-section">
+            <h2>Links</h2>
             <p>
                 As for links there are two options. One that is <span>inline</span> and
                 one that behaves like a <span>block</span>.
@@ -116,6 +159,11 @@ function Link() {
             <p>
                 This is a <a href="">link</a> in a sentence
             </p>
+            <p>
+                You are probably wondering where are the buttons. The thing is, there are{' '}
+                <span>no buttons</span> because buttons don't exist on graph paper, but
+                links do. I don't make the rules.
+            </p>
         </div>
     );
 }
@@ -123,7 +171,15 @@ function Link() {
 function Icons() {
     return (
         <div>
-            <p></p>
+            <h2>Icons</h2>
+            <p>
+                Icons were rather straight forward, I kept them within the size of a
+                single grid cell. I utilized this{' '}
+                <a href="https://react-icons.github.io/react-icons/" target="_blank">
+                    website
+                </a>{' '}
+                for icons, using only the <span>Lucide</span> icons for consistency.
+            </p>
             <div id="icon-design-section">
                 <CopyIcon />
                 <ExternalLinkIcon />

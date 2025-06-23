@@ -11,16 +11,16 @@ export default function About() {
                     <p>
                         I was going through a crisis, deciding whether to call this page <span>Home</span> or <span>About</span>
                     </p>
-                    <a href="">
+                    <a href="" className='standalone-link'>
                         LinkedIn <ExternalLinkIcon />
                     </a>
-                    <a href="">
+                    <a href="" className='standalone-link'>
                         Github <ExternalLinkIcon />
                     </a>
-                    <a href="">
+                    <a href="" className='standalone-link'>
                         Resume <ExternalLinkIcon />
                     </a>
-                    <a href="">
+                    <a href="" className='standalone-link'>
                         josederios@outlook.com <CopyIcon />
                     </a>
                 </div>
