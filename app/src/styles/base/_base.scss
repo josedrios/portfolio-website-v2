@@ -1,32 +1,50 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
-  background-color: $background-color;
+    background-color: $background-color;
 }
 
 #root {
-  overflow-y: auto;
+    overflow-y: auto;
 }
 
 #website-container {
-  margin: $spacing-md auto;
-  max-width: 901px;
-  background-image: linear-gradient($grid-color 1px, transparent 1px),
-    linear-gradient(90deg, $grid-color 1px, transparent 1px);
-  background-size: 20px 20px;
+    margin: $spacing-md auto;
+    max-width: 901px;
+    background-image: linear-gradient($grid-color 1px, transparent 1px),
+        linear-gradient(90deg, $grid-color 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-right: 1px solid $grid-color;
+    border-bottom: 1px solid $grid-color;
+}
+
+// margin around website container only for touch devices
+@media (pointer: coarse) {
+    #website-container {
+        margin: $spacing-md;
+    }
 }
 
 main {
-  margin-top: $spacing-xl;
-  // padding: 0 $spacing-md;
+    margin-top: $spacing-xl;
+    // padding: 0 $spacing-md;
 }
 
 button {
-  background-color: transparent;
-  border: none;
-  outline: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
 
-  &:hover {
-    cursor: pointer;
-  }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {

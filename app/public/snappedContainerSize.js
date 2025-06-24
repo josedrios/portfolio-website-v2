@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (container.parentElement) {
             const parentWidth = container.parentElement.clientWidth - 40;
             const snappedWidth = Math.floor(parentWidth / increment) * increment;
-            container.style.width = `${snappedWidth + 1}px`;
+            container.style.width = `${snappedWidth}px`;
         } else {
             console.warn(
                 'Parent element for #website-container not found for width calculation.'
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let finalSnappedHeight = Math.max(snappedNaturalHeight, snappedParentHeight);
 
             // Apply the chosen final snapped height
-            container.style.height = `${finalSnappedHeight + 1}px`;
+            container.style.height = `${finalSnappedHeight}px`;
         } else {
             console.warn(
                 'Parent element for #website-container not found for height calculation.'
             );
             // Fallback height
-            container.style.height = `${increment + 1}px`;
+            container.style.height = `${increment}px`;
         }
     }
 

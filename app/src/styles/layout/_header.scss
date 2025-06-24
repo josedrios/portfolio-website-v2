@@ -64,7 +64,7 @@ nav {
         display: block;
         text-decoration: none;
         width: 100px;
-        margin-right: $spacing-md;
+        margin-right: $spacing-sm;
     }
 
     .asterisk {
@@ -87,7 +87,7 @@ nav {
 @media (max-width: 500px) {
     nav {
         width: 100%;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-direction: row;
 
         .nav-button {

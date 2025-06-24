@@ -1,0 +1,28 @@
+#not-found-content {
+    flex-direction: column;
+    gap: 0;
+}
+
+#not-found-header {
+    display: flex;
+    flex-direction: row;
+    padding-top: $spacing-md;
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+
+    img {
+        position: relative;
+        bottom: 65px;
+        width: 80px;
+    }
+
+    p {
+        font-size: 50px;
+    }
+}
+
+.not-found-info {
+    text-align: center;
+    margin: auto;
+}

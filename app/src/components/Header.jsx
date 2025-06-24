@@ -77,7 +77,7 @@ function LeftHeader() {
 
 function Navigation() {
     const navItems = [
-        { name: 'Home', path: '/' },
+        { name: 'About', path: '/' },
         { name: 'Projects', path: '/projects' },
         { name: 'Design', path: '/design' },
         { name: 'Blog', path: '/blog' },
