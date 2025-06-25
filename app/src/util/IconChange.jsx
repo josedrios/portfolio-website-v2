@@ -1,6 +1,6 @@
 const imageData = [
     {
-        phrase: 'wizard drip',
+        phrase: 'wisdom cap',
         path: '/images/wizard_hat.png',
     },
     {
@@ -28,11 +28,11 @@ const imageData = [
         path: '/images/luffy.png',
     },
     {
-        phrase: 'real one',
+        phrase: 'the man I strive to become',
         path: '/images/kamina.png',
     },
     {
-        phrase: 'black airforces',
+        phrase: 'doffy',
         path: '/images/doffys_glasses.png',
     },
     {

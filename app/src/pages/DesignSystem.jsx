@@ -88,9 +88,8 @@ function Logo() {
             <p>
                 To make the website very <span>distinguishable</span>, I needed to
                 incorporate a logo that would create a unique identity, establishing my
-                website's
-                <span>individuality</span>. The best way I found I can do this was to make
-                a doodle of myself as the logo.
+                website's <span>individuality</span>. The best way I found I can do this
+                was to make a doodle of myself as the logo.
             </p>
             <p>
                 <i>INSERT LOGO FACE IMAGE</i>
@@ -106,7 +105,7 @@ function Logo() {
                 <a href="https://krita.org/en/" target="_blank">
                     here
                 </a>
-                . Here are some of my favorite logo overlays:
+                . Take a look at some of my favorite logo overlays:
             </p>
             <p>
                 <i>INSERT LOGO OVERLAY IMAGES</i>

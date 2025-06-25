@@ -18,6 +18,9 @@ body {
     background-size: 20px 20px;
     border-right: 1px solid $grid-color;
     border-bottom: 1px solid $grid-color;
+    
+    // the little wiggle when scrolling and leading the text to not align to the grid is because this wasnt here
+    overflow: hidden;
 }
 
 // margin around website container only for touch devices
