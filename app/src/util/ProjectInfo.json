@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Silver Minded",
+        "link": "https://github.com/josedrios/silver-minded",
+        "skills": "React.js, Express.js, Sass, Git, VS Code",
+        "date": "March 2025",
+        "info": "Silver Minded is a desktop application I created in order to place all the wandering thoughts and ideas I had roaming through my head. I find myself spreading all my writings and projects on different pieces of media and platforms as well and I felt like I needed to fix this and centralize all that I need into one piece of software. This application tracks my finances, projects, thoughts and much more. In a nutshell, it contains a calendar for keeping track of events, a finance tracker that also gives me more insight on my spending and saving, and most importantly a network of documents. I can create and index through documents in such a frictionless way that this software serves as the perfect second mind.",
+        "image": "Image path location"
+    },
+    {
+        "title": "Clashvote",
+        "link": "https://github.com/josedrios/clashvote",
+        "skills": "React.js, Express.js, Sass, Git, VS Code",
+        "date": "October 2025",
+        "info": "Clashvote is a voting website where users vote on various aspects on the popular mobile game Clash of Clans, helping players of any skill level. Users also have the ability to search for their own player stats, giving them insight on what their strength and weaknesses are as well as providing them a better overview on both their bases and their respective armies.",
+        "image": "Image path location"
+    },
+    {
+        "title": "ReadAI",
+        "link": "https://github.com/josedrios/AI-Book-Bot",
+        "skills": "Swift, Git, Xcode",
+        "date": "December 2024",
+        "info": "With my strong growing interest of reading, I decided to make an app that lets you search for information on a book or get recommendations for books on certain genres utilizing AI. ReadAI takes and displays the information of a given ISBN or a random generated ISBN given a genre and displays rudimentary information on the book but most importantly gives the user an AI generated summarization of the book.",
+        "image": "Image path location"
+    },
+    {
+        "title": "Clash Attack Finder",
+        "link": "https://github.com/josedrios/clashofclansclicker",
+        "skills": "Python, Git, VS Code",
+        "date": "November 2024",
+        "info": "My Clash of Clans Attack Finder is designed to eliminate the grind and maximize efficiency by automating finding attackable bases. It works by reading the resource values from my phone screen, activating the servo which clicks the mouse to move to the next base through my Raspberry Pi or if a proper base is found that meets the players minimum loot threshold they will then be notified. This tool streamlines actions that would otherwise take hours, allowing players to focus on other activities instead of repeatedly pressing 'Next' to find the right base.",
+        "image": "Image path location"
+    },
+    {
+        "title": "Tank Game",
+        "link": "https://github.com/josedrios/tankgame",
+        "skills": "Java, Git, IntelliJ",
+        "date": "August 2023",
+        "info": "As both a gamer and a programmer, I naturally brought myself to create a game. The game features two Space Tanks, with the ability to shoot, traverse amongst the map, be able to pick up abilities as well as play alongside your friends. ",
+        "image": "Image path location"
+    },
+    {
+        "title": "Previous Portfolio Website",
+        "link": "https://github.com/josedrios/portfolio-website",
+        "skills": "React.js, Sass, AWS, Git, VS Code",
+        "date": "August 2024",
+        "info": "My very first portfolio website was to showcase my skills and projects alongside acting as a hub of where to reach me. It taught me a lot about React and developing consistency in a websites UI.",
+        "image": "Image path location"
+    },
+    {
+        "title": "AI Wake Word Detection",
+        "link": "https://github.com/josedrios/heymachine",
+        "skills": "Python, Git, VS Code",
+        "date": "November 2025",
+        "info": "This project holds my experimentation with using a microphone to have a conversation with AI. I utilized the concept of wake word detection to ask AI questions. I put this project on hold and plan to come back to this project to make it serve as my own version of Siri or Alexa.",
+        "image": "Image path location"
+    },
+    {
+        "title": "Fashion Model Database System",
+        "link": "https://github.com/josedrios/fashion-database-system",
+        "skills": "MySQL, Python, Git, IntelliJ",
+        "date": "August 2023",
+        "info": "I created a database system with MySQL for the fashion model industry. The process involved laying out the requirements of the system, like what needs to be stored and taken into consideration, creating EER diagrams, implementing it in SQL and even running a dummy discord bot to test and refine the system.",
+        "image": "Image path location"
+    }
+]

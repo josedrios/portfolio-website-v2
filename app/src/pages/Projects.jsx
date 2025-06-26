@@ -1,3 +1,6 @@
+import projectInfo from '../util/ProjectInfo.json';
+import { ExternalLinkIcon } from '../components/Icons';
+
 export default function Projects() {
     return (
         <main id="projects-page">
@@ -15,7 +18,31 @@ export default function Projects() {
                 </div>
             </aside>
             <div className="content">
-                <p>PROJECT PAGE TEXT</p>
+                {projectInfo.map((project, i) => (
+                    <div className="project-card" key={i}>
+                        <h2>
+                            <a href={project.link} target='_blank'>{project.title} </a>
+                            <ExternalLinkIcon />
+                        </h2>
+                        <p>
+                            <span>Skills: </span>
+                            {project.skills}
+                        </p>
+                        <h3>
+                            <span>Date: </span>
+                            {project.date}
+                        </h3>
+                        <p>{project.info}</p>
+                    </div>
+                ))}
+                <p className="small-text" id="projects-footer">
+                    <i>
+                        The rest of my projects are on my{' '}
+                        <a href="https://github.com/josedrios" target="_blank">
+                            github
+                        </a>
+                    </i>
+                </p>
             </div>
         </main>
     );
