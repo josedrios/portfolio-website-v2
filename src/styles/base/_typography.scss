@@ -71,7 +71,8 @@ h3 {
 }
 
 p,
-a {
+a,
+li {
     font-size: $font-base;
     padding-top: 4.4px;
     line-height: 20px;
@@ -100,4 +101,14 @@ span {
     padding-top: 6px;
     padding-bottom: 14px;
     margin-bottom: 0px;
+}
+
+li::before {
+    position: relative;
+    bottom: 3px;
+    content: '*';
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+    color: $primary-color;
 }

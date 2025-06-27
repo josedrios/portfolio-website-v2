@@ -1,8 +1,8 @@
 'use client';
+import OverlayInfo from '@/content/OverlayInfo.json'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import imageData from '../util/IconChange';
 
 export default function Header() {
     return (
@@ -24,7 +24,7 @@ function LeftHeader() {
     }, []);
 
     const reshuffleOverlays = () => {
-        const shuffled = [...imageData].sort(() => Math.random() - 0.5);
+        const shuffled = [...OverlayInfo].sort(() => Math.random() - 0.5);
         setShuffledOverlays(shuffled);
         setCurrentIndex(0);
     };

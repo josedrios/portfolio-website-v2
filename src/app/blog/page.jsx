@@ -1,4 +1,9 @@
+import { getAllPosts } from '@/lib/blog';
+import Link from 'next/link';
+
 export default function Blog() {
+    const posts = getAllPosts();
+
     return (
         <main id="blog-page">
             <aside>
@@ -18,7 +23,15 @@ export default function Blog() {
                 </p>
             </aside>
             <div className="content">
-                <p>BLOG PAGE TEXT</p>
+                {posts.map(post => (
+                    <Link href={`/blog/${post.slug}`} key={post.slug}>
+                        <div>
+                            <h2>{post.title}</h2>
+                            <p>{post.info}</p>
+                            <small>{post.date}</small>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </main>
     );

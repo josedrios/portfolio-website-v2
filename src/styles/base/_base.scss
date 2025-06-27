@@ -25,7 +25,7 @@ body {
 
 // WEBSITE BACKGROUND WIDTH AND HEIGHT SNAP TO 20PX INCREMENTS SO NO PARTIAL GRID CELLS APPEAR
 
-@for $i from 300 through 1280 {
+@for $i from 150 through 1280 {
     @if ($i % 20 == 0) {
         @media (min-width: #{$i}px) {
             #website-container {
