@@ -1,72 +1,52 @@
 html {
     -webkit-text-size-adjust: 100%;
+    background-color: $background-color;
 }
 
 body {
     background-color: $background-color;
 }
 
-body {
-    padding-top: env(safe-area-inset-top);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-    overflow-y: auto;
-}
-
 #root {
+    background-color: $background-color;
     overflow-y: auto;
-}
-
-@function snap($value, $increment: 20) {
-  @return round($value / $increment) * $increment;
 }
 
 #website-container {
-    // height: calc(100% - 2 * $spacing-md);
+    width: 100%;
     margin: $spacing-md auto;
-    // width: calc(100% - 2 * $spacing-md);
     max-width: 901px;
     background-image: linear-gradient($grid-color 1px, transparent 1px),
         linear-gradient(90deg, $grid-color 1px, transparent 1px);
     background-size: 20px 20px;
     border-right: 1px solid $grid-color;
     border-bottom: 1px solid $grid-color;
-
-    // the little wiggle when scrolling and leading the text to not align to the grid is because this wasnt here
-    overflow: hidden;
 }
 
-@for $i from 320 through 1280 {
-  @if ($i % 20 == 0) {
-    @media (min-width: #{$i}px) {
-      #website-container {
-        width: #{$i - 40}px;
-      }
+// WEBSITE BACKGROUND WIDTH AND HEIGHT SNAP TO 20PX INCREMENTS SO NO PARTIAL GRID CELLS APPEAR
+
+@for $i from 300 through 1280 {
+    @if ($i % 20 == 0) {
+        @media (min-width: #{$i}px) {
+            #website-container {
+                width: #{$i - 40}px;
+            }
+        }
     }
-  }
 }
 
-@for $i from 320 through 2000 {
-  @if ($i % 20 == 0) {
-    @media (min-height: #{$i}px) {
-      #website-container {
-        min-height: #{$i}px;
-      }
-    }
-  }
-}
-
-// margin around website container only for touch devices
-@media (pointer: coarse) {
-    #website-container {
-        margin: $spacing-md;
+@for $i from 200 through 4000 {
+    @if ($i % 20 == 0) {
+        @media (min-height: #{$i}px) {
+            #website-container {
+                min-height: #{$i - 40}px;
+            }
+        }
     }
 }
 
 main {
     margin-top: $spacing-xl;
-    // padding: 0 $spacing-md;
 }
 
 button {

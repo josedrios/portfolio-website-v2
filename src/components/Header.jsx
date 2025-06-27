@@ -86,7 +86,6 @@ function Navigation() {
         { name: 'Projects', path: '/projects' },
         { name: 'Design', path: '/design' },
         { name: 'Blog', path: '/blog' },
-        { name: '404', path: '/404' },
     ];
 
     return (
