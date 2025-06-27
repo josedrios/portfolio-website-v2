@@ -1,5 +1,7 @@
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import imageData from '../util/IconChange';
 
 export default function Header() {
@@ -52,7 +54,9 @@ function LeftHeader() {
                     </i>
                 </p>
                 {imageOverlay !== null ? (
-                    <p className='small-text' id="overlay-phrase">└── {' '}{imageOverlay.phrase}</p>
+                    <p className="small-text" id="overlay-phrase">
+                        └── {imageOverlay.phrase}
+                    </p>
                 ) : (
                     ''
                 )}
@@ -76,25 +80,30 @@ function LeftHeader() {
 }
 
 function Navigation() {
+    const pathname = usePathname();
     const navItems = [
         { name: 'About', path: '/' },
         { name: 'Projects', path: '/projects' },
         { name: 'Design', path: '/design' },
         { name: 'Blog', path: '/blog' },
+        { name: '404', path: '/404' },
     ];
 
     return (
         <nav>
-            {navItems.map(item => (
-                <NavLink
-                    key={item.name}
-                    to={item.path}
-                    className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}
-                >
-                    <span className="asterisk">*</span>
-                    {item.name}
-                </NavLink>
-            ))}
+            {navItems.map(item => {
+                const isActive = pathname === item.path;
+                return (
+                    <Link
+                        key={item.name}
+                        href={item.path}
+                        className={`nav-button ${isActive ? 'active' : ''}`}
+                    >
+                        <span className="asterisk">*</span>
+                        {item.name}
+                    </Link>
+                );
+            })}
         </nav>
     );
 }

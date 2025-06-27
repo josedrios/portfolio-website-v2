@@ -4,7 +4,7 @@ import {
     LeftArrowIcon,
     RightArrowIcon,
     XIcon,
-} from '../components/Icons';
+} from '@/components/Icons';
 
 export default function DesignSystem() {
     return (
@@ -75,7 +75,7 @@ function Font() {
                     here
                 </a>
                 . The website <span>Eigil Nikolajsen</span> made for this font is
-                absolutely beautifully simple and super fun to interact with.
+                absolutely beautiful and super fun to interact with.
             </p>
         </div>
     );

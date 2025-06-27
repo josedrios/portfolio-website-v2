@@ -1,5 +1,5 @@
-import projectInfo from '../util/ProjectInfo.json';
-import { ExternalLinkIcon } from '../components/Icons';
+import projectInfo from '@/util/ProjectInfo.json';
+import { ExternalLinkIcon } from '@/components/Icons';
 
 export default function Projects() {
     return (
