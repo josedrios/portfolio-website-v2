@@ -1,6 +1,7 @@
 import { getAllPosts } from '@/lib/blog';
 import Link from 'next/link';
 
+
 export default async function Blog() {
     const posts = await getAllPosts();
 

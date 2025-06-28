@@ -1,4 +1,5 @@
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
+import ScrollToHeader from '@/util/scrollToHeader';
 
 // On build, all slugs (or posts in this case) will be served as static files at runtime
 // My interpretation of the flow of these slugs:
@@ -25,25 +26,7 @@ export default async function BlogPost({ params }) {
                     <span>|</span>Table of Contents
                 </h2>
                 {post.headings.map(heading => (
-                    <div
-                        className={`toc-links ${heading.level === 3 ? 'indented' : ''}`}
-                        key={heading.title}
-                    >
-                        <p>
-                            <span>*</span>
-                        </p>
-                        <div className="toc-links-body">
-                            <a
-                                href={`#${heading.title
-                                    .toLowerCase()
-                                    .replace(/\s+/g, '-')
-                                    .replace(/[^a-z0-9\s-]/g, '')
-                                    .replace(/^-+|-+$/g, '')}`}
-                            >
-                                {heading.title}
-                            </a>
-                        </div>
-                    </div>
+                    <ScrollToHeader heading={heading}/>
                 ))}
             </aside>
         </main>

@@ -1,4 +1,4 @@
-'use server'
+'use server';
 
 import fs from 'fs';
 import path from 'path';
@@ -9,6 +9,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import rehypeSlug from 'rehype-slug';
 import rehypeStringify from 'rehype-stringify';
+import { redirect } from 'next/navigation';
 
 const blogDir = path.join(process.cwd(), '/src/content/blog');
 
@@ -26,39 +27,43 @@ export async function getAllPosts() {
 }
 
 export async function getPostBySlug(slug) {
-    const filePath = path.join(blogDir, `${slug}.md`);
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    const { data, content } = matter(fileContent);
-    const processedContent = await remark()
-        .use(remarkParse)
-        .use(remarkRehype)
-        .use(rehypeSlug)
-        .use(rehypeStringify)
-        .process(content);
-    const contentHtml = processedContent.toString();
+    try {
+        const filePath = path.join(blogDir, `${slug}.md`);
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        const { data, content } = matter(fileContent);
+        const processedContent = await remark()
+            .use(remarkParse)
+            .use(remarkRehype)
+            .use(rehypeSlug)
+            .use(rehypeStringify)
+            .process(content);
+        const contentHtml = processedContent.toString();
 
-    // Get headings of the blog
-    const tree = await remark().parse(content);
-    const headings = [];
+        // Get headings of the blog
+        const tree = await remark().parse(content);
+        const headings = [];
 
-    visit(tree, 'heading', node => {
-        const getText = node => {
-            if (node.type === 'text') return node.value;
-            if (node.children) return node.children.map(getText).join('');
-            return '';
+        visit(tree, 'heading', node => {
+            const getText = node => {
+                if (node.type === 'text') return node.value;
+                if (node.children) return node.children.map(getText).join('');
+                return '';
+            };
+            const text = getText(node);
+            if (node.depth === 2 || node.depth === 3) {
+                headings.push({ level: node.depth, title: text });
+            }
+        });
+
+        console.log(headings);
+
+        return {
+            slug,
+            contentHtml,
+            ...data,
+            headings,
         };
-        const text = getText(node);
-        if (node.depth === 2 || node.depth === 3) {
-            headings.push({ level: node.depth, title: text });
-        }
-    });
-
-    console.log(headings);
-
-    return {
-        slug,
-        contentHtml,
-        ...data,
-        headings,
-    };
+    } catch (err) {
+        redirect('/could-not-find-blog-post');
+    }
 }
