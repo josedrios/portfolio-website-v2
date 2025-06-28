@@ -3,7 +3,8 @@ import {
     LuArrowUpRight,
     LuArrowLeft,
     LuArrowRight,
-    LuX
+    LuX,
+    LuLink
 } from 'react-icons/lu';
 
 const createIcon = (IconComponent) => () => (
@@ -15,3 +16,4 @@ export const ExternalLinkIcon= createIcon(LuArrowUpRight);
 export const LeftArrowIcon= createIcon(LuArrowLeft);
 export const RightArrowIcon= createIcon(LuArrowRight);
 export const XIcon= createIcon(LuX);
+export const LinkIcon= createIcon(LuLink);

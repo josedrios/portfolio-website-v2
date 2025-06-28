@@ -4,6 +4,7 @@ import {
     LeftArrowIcon,
     RightArrowIcon,
     XIcon,
+    LinkIcon
 } from '@/components/Icons';
 
 export default function DesignSystem() {
@@ -212,6 +213,7 @@ function Icons() {
             </p>
             <div id="icon-design-section">
                 <CopyIcon />
+                <LinkIcon />
                 <ExternalLinkIcon />
                 <LeftArrowIcon />
                 <RightArrowIcon />

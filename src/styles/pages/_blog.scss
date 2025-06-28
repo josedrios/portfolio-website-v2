@@ -23,13 +23,13 @@
     content: '';
     position: absolute;
     inset: 0;
-background: repeating-linear-gradient(
-  45deg,
-  $primary-color 0,
-  $primary-color 1.5px,
-  transparent 1.5px,
-  transparent 15px
-);
+    background: repeating-linear-gradient(
+        45deg,
+        $primary-color 0,
+        $primary-color 1.5px,
+        transparent 1.5px,
+        transparent 15px
+    );
     opacity: 0;
     pointer-events: none;
 }
@@ -69,8 +69,14 @@ background: repeating-linear-gradient(
     }
 }
 
+.share-post-link {
+    margin-top: $spacing-md;
+    text-align: center;
+}
+
 article {
-    h2, h3 {
+    h2,
+    h3 {
         color: $primary-color;
     }
 }

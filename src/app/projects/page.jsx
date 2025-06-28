@@ -18,8 +18,8 @@ export default function Projects() {
                 </div>
             </aside>
             <div className="content">
-                {projectInfo.map((project, i) => (
-                    <div className="project-card" key={i}>
+                {projectInfo.map((project) => (
+                    <div className="project-card" key={project.title}>
                         <h2>
                             <a href={project.link} target='_blank'>{project.title} </a>
                             <ExternalLinkIcon />

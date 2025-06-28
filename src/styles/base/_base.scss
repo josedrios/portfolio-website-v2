@@ -53,15 +53,15 @@ button {
     background-color: transparent;
     border: none;
     outline: none;
-
-    &:hover {
-        cursor: pointer;
-    }
 }
 
 button,
 a {
     -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .icon {

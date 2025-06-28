@@ -1,12 +1,10 @@
 ---
-title: "Digital Decluttering"
+title: "Digital Decluttering In Todays World"
 date: "2025-06-27"
 info: "This blog is about digital decluttering in various parts of media people own"
 ---
 
 ## Why Digital Decluttering Matters
-> This is a test quote block, im going to make this super long to test out the text wrapping capabilities
-> - Jose Rios
 
 In our increasingly connected world, it's easy to accumulate vast amounts of digital "stuff." From overflowing email inboxes and disorganized cloud storage to countless apps on our phones and desktops, this digital clutter can be just as overwhelming as physical clutter. It can lead to:
 
@@ -16,6 +14,13 @@ In our increasingly connected world, it's easy to accumulate vast amounts of dig
 * **Security risks:** Outdated software and forgotten accounts can be vulnerabilities.
 
 Just as a clean living space can bring a sense of calm and clarity, a streamlined digital environment can boost your efficiency, reduce anxiety, and even improve your focus.
+
+<!-- ```
+console.log('sop')
+``` -->
+
+> This is a test quote block, im going to make this super long to test out the text wrapping capabilities
+> - Jose Rios
 
 ## Where to Begin Your Digital Purge
 

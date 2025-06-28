@@ -1,4 +1,5 @@
-import { CopyIcon, ExternalLinkIcon } from '../components/Icons';
+import { ExternalLinkIcon } from '../components/Icons';
+import CopyEmail from '../components/CopyEmail';
 
 export default function About() {
     return (
@@ -31,15 +32,11 @@ export default function About() {
                     <a href="" className="standalone-link">
                         Resume <ExternalLinkIcon />
                     </a>
-                    <a href="" className="standalone-link">
-                        josederios@outlook.com <CopyIcon />
-                    </a>
+                    <CopyEmail />
                 </div>
             </aside>
             <div className="content">
-                <p>
-                    My name is Jose De Jesus Rios and I welcome you.
-                </p>
+                <p>My name is Jose De Jesus Rios and I welcome you.</p>
                 <p>
                     I am a <span>web developer</span> who enjoys building robust, useful
                     software with eye-catching user interfaces. I am constantly working on

@@ -24,7 +24,7 @@ export default async function Blog() {
                 </p>
             </aside>
             <div className="content">
-                {posts.map(post => (
+                {posts.map((post) => (
                     <Link
                         href={`/blog/${post.slug}`}
                         className="blog-link"

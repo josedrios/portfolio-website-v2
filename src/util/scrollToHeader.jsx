@@ -14,7 +14,6 @@ export default function ScrollToHeader({ heading }) {
     return (
         <div
             className={`toc-links ${heading.level === 3 ? 'indented' : ''}`}
-            key={heading.title}
         >
             <p>
                 <span>*</span>

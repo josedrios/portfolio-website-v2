@@ -1,5 +1,6 @@
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import ScrollToHeader from '@/util/scrollToHeader';
+import ShareLink from '../../../components/ShareLink';
 
 // On build, all slugs (or posts in this case) will be served as static files at runtime
 // My interpretation of the flow of these slugs:
@@ -18,7 +19,7 @@ export default async function BlogPost({ params }) {
         <main id="blog-post-page">
             <article className="content">
                 <h1>{post.title}</h1>
-                <p className="blog-date">{post.date}</p>
+                <p className="blog-date">By Jose De Jesus Rios, {post.date}</p>
                 <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
             </article>
             <aside className="toc">
@@ -26,8 +27,9 @@ export default async function BlogPost({ params }) {
                     <span>|</span>Table of Contents
                 </h2>
                 {post.headings.map(heading => (
-                    <ScrollToHeader heading={heading}/>
+                    <ScrollToHeader heading={heading} key={heading.title}/>
                 ))}
+                <ShareLink />
             </aside>
         </main>
     );
