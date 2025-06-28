@@ -70,3 +70,23 @@ a {
     margin: 0;
     vertical-align: top;
 }
+
+blockquote {
+    border-left: 2px solid $primary-color;
+    padding-left: $spacing-xs;
+    margin-left: $spacing-xs;
+    font-style: italic;
+    margin-bottom: $spacing-md;
+
+    p {
+        padding-bottom: 0;
+        margin-bottom: 16px;
+    }
+
+    li::before {
+        content: '-';
+        text-align: center;
+        display: inline-block;
+        color: black;
+    }
+}
