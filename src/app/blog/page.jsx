@@ -33,7 +33,7 @@ export default async function Blog() {
                             <h2>
                                 <span>{post.title}</span>
                             </h2>
-                            <p className="blog-date">{post.date}</p>
+                            <p className="blog-date">└── {post.date}</p>
                             <p>{post.info}</p>
                         </div>
                     </Link>

@@ -53,4 +53,4 @@ next-env.d.ts
 /pnpm-lock.yaml
 
 # blog markdowns
-content/blog/*.md
+/src/app/content/blog/**/*.md
