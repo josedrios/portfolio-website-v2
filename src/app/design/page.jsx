@@ -72,7 +72,7 @@ function Font() {
             </p>
             <p>
                 If you also want to utilize this font you can find it{' '}
-                <a href="https://commitmono.com/" target="_blank">
+                <a href="https://commitmono.com/" target="_blank" rel="noopener noreferrer">
                     here
                 </a>
                 . The website <span>Eigil Nikolajsen</span> made for this font is
@@ -103,7 +103,7 @@ function Logo() {
                 this adds a sense of <span>hidden interactivity</span> that the user would
                 possibly find interesting. All drawings were done on <span>Krita</span>, a
                 free open source graphic editor that can be found{' '}
-                <a href="https://krita.org/en/" target="_blank">
+                <a href="https://krita.org/en/" target="_blank" rel="noopener noreferrer">
                     here
                 </a>
                 . Take a look at some of my favorite logo overlays:
@@ -183,12 +183,12 @@ function Link() {
                 As for links there are two options. One that is <span>inline</span> and
                 one that behaves like a <span>block</span>.
             </p>
-            <a href="" className="standalone-link">
+            <a className="standalone-link">
                 Standalone Link
                 <ExternalLinkIcon />
             </a>
             <p>
-                This is a <a href="">link</a> in a sentence
+                This is a <a>link</a> in a sentence
             </p>
             <p>
                 You are probably wondering where are the buttons. The thing is, there are{' '}
@@ -206,7 +206,7 @@ function Icons() {
             <p>
                 Icons were rather straight forward, I kept them within the size of a
                 single grid cell. I utilized this{' '}
-                <a href="https://react-icons.github.io/react-icons/" target="_blank">
+                <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noopener noreferrer">
                     website
                 </a>{' '}
                 for icons, using only the <span>Lucide</span> icons for consistency.

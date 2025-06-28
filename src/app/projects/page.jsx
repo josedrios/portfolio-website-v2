@@ -21,7 +21,7 @@ export default function Projects() {
                 {projectInfo.map((project) => (
                     <div className="project-card" key={project.title}>
                         <h2>
-                            <a href={project.link} target='_blank'>{project.title} </a>
+                            <a href={project.link} target='_blank' rel="noopener noreferrer">{project.title}</a>
                             <ExternalLinkIcon />
                         </h2>
                         <p>
@@ -38,7 +38,7 @@ export default function Projects() {
                 <p className="small-text" id="projects-footer">
                     <i>
                         The rest of my projects are on my{' '}
-                        <a href="https://github.com/josedrios" target="_blank">
+                        <a href="https://github.com/josedrios" target="_blank" rel="noopener noreferrer">
                             github
                         </a>
                     </i>

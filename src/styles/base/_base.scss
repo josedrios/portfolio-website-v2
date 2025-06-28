@@ -12,9 +12,22 @@ body {
     overflow-y: auto;
 }
 
+#copy-right {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    // Used relatively the same color as for the grid but darker
+    // so there is more contrast for better readability
+    color: rgb(50, 135, 200);
+    margin: $spacing-sm auto;
+}
+
 #website-container {
     width: 100%;
     margin: $spacing-md auto;
+    margin-bottom: 0;
     max-width: 901px;
     background-image: linear-gradient($grid-color 1px, transparent 1px),
         linear-gradient(90deg, $grid-color 1px, transparent 1px);
@@ -31,6 +44,10 @@ body {
             #website-container {
                 width: #{$i - 40}px;
             }
+
+            #copy-right {
+                width: #{$i - 40}px;
+            }
         }
     }
 }
@@ -39,7 +56,9 @@ body {
     @if ($i % 20 == 0) {
         @media (min-height: #{$i}px) {
             #website-container {
-                min-height: #{$i - 40}px;
+                // we did -50 because of the top/bottom margin as well
+                // as the height of the copy right tag
+                min-height: #{$i - 60}px;
             }
         }
     }

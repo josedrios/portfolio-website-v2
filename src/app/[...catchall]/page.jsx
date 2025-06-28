@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function NotFound() {
     return (
         <div className="not-found">
@@ -16,7 +18,7 @@ export default function NotFound() {
                 </p>
                 <p className="not-found-info">
                     It could be possible that the page is just hiding from you. Go back
-                    home <a href="">here</a>
+                    home <Link href="/">here</Link>
                 </p>
             </main>
         </div>

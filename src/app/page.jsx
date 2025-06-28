@@ -19,6 +19,7 @@ export default function About() {
                         href="https://www.linkedin.com/in/josederios/"
                         target="_blank"
                         className="standalone-link"
+                        rel="noopener noreferrer"
                     >
                         LinkedIn <ExternalLinkIcon />
                     </a>
@@ -26,10 +27,11 @@ export default function About() {
                         href="https://github.com/josedrios"
                         target="_blank"
                         className="standalone-link"
+                        rel="noopener noreferrer"
                     >
                         Github <ExternalLinkIcon />
                     </a>
-                    <a href="" className="standalone-link">
+                    <a href="/Resume.pdf" className="standalone-link" download>
                         Resume <ExternalLinkIcon />
                     </a>
                     <CopyEmail />

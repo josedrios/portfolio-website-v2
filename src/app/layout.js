@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
                         <Header />
                         {children}
                     </div>
+                    <p id="copy-right">Copyright © 2025 Jose De Jesus Rios.</p>
                 </div>
             </body>
         </html>
