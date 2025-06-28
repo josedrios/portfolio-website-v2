@@ -24,6 +24,7 @@ body {
     margin: $spacing-sm auto;
 }
 
+
 #website-container {
     width: 100%;
     margin: $spacing-md auto;
@@ -78,8 +79,10 @@ button,
 a {
     -webkit-tap-highlight-color: transparent;
 
-    &:hover {
-        cursor: pointer;
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

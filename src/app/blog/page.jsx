@@ -1,6 +1,6 @@
 import { getAllPosts } from '@/lib/blog';
+import { useMediumDate } from '@/util/dateUtil';
 import Link from 'next/link';
-
 
 export default async function Blog() {
     const posts = await getAllPosts();
@@ -24,18 +24,18 @@ export default async function Blog() {
                 </p>
             </aside>
             <div className="content">
-                {posts.map((post) => (
+                {posts.map(post => (
                     <Link
                         href={`/blog/${post.slug}`}
                         className="blog-link"
-                        key={post.slug}
+                        key={post.title}
                     >
                         <div className="card">
                             <h2>
                                 <span>{post.title}</span>
                             </h2>
-                            <p className="blog-date">└── {post.date}</p>
-                            <p>{post.info}</p>
+                            <p className="blog-info">{post.info}</p>
+                            <p className="blog-date">{useMediumDate(post.date)}</p>
                         </div>
                     </Link>
                 ))}

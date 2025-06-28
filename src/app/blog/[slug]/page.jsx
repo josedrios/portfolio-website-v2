@@ -1,6 +1,7 @@
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import ScrollToHeader from '@/util/scrollToHeader';
 import ShareLink from '../../../components/ShareLink';
+import { useLongDate } from '@/util/dateUtil';
 
 // On build, all slugs (or posts in this case) will be served as static files at runtime
 // My interpretation of the flow of these slugs:
@@ -19,7 +20,7 @@ export default async function BlogPost({ params }) {
         <main id="blog-post-page">
             <article className="content">
                 <h1>{post.title}</h1>
-                <p className="blog-date">By Jose De Jesus Rios, {post.date}</p>
+                <p className="blog-date">By Jose De Jesus Rios - {useLongDate(post.date)}</p>
                 <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
             </article>
             <aside className="toc">

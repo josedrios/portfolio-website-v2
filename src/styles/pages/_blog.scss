@@ -3,40 +3,20 @@
 }
 
 .card {
-    margin-bottom: $spacing-md;
+    margin-bottom: calc($spacing-md - 0px);
     position: relative;
     overflow: hidden;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding: $spacing-md;
+    padding-bottom: calc($spacing-md - 1px);
+    background-color: $background-color;
+    border-left: 1px solid $grid-color;
+    border-top: 1px solid $grid-color;
 
-    h2 {
-        padding-bottom: 0;
+    &:hover {
+        // Used this color because it is a mix of tha background
+        // color with a super transparent overlay of the grid color
+        background-color: #e4eada;
     }
-
-    .blog-date {
-        padding-top: 2px;
-        padding-bottom: 15px;
-    }
-}
-
-.card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-        45deg,
-        $primary-color 0,
-        $primary-color 1.5px,
-        transparent 1.5px,
-        transparent 15px
-    );
-    opacity: 0;
-    pointer-events: none;
-}
-
-.card:hover::after {
-    opacity: 1;
-    border: 1px solid $primary-color;
 }
 
 .toc {
@@ -62,16 +42,27 @@
         text-decoration: none;
         padding-bottom: 0;
 
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: $primary-color;
+        @media (hover: hover) {
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: $primary-color;
+            }
         }
     }
 }
 
 .share-post-link {
-    margin-top: $spacing-md;
     text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: $spacing-md;
+}
+
+@media (max-width: 800px) {
+    .share-post-link {
+        margin: 0 0;
+        margin-top: $spacing-md;
+    }
 }
 
 article {

@@ -75,8 +75,12 @@ nav {
         visibility: hidden;
     }
 
-    .nav-button:hover .asterisk {
-        visibility: visible;
+    @media (hover: hover) {
+        &:hover {
+            .nav-button:hover .asterisk {
+                visibility: visible;
+            }
+        }
     }
 
     .nav-button.active .asterisk {
