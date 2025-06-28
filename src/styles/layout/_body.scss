@@ -6,7 +6,7 @@ main {
 
 aside {
     width: 300px;
-    order: 2;
+    order: 10;
 }
 
 .content {
@@ -20,6 +20,6 @@ aside {
 
     aside {
         width: 100%;
-        order: 0;
+        order: -10;
     }
 }

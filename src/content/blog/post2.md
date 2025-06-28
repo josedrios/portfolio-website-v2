@@ -65,5 +65,3 @@ Decluttering isn't a one-time event; it's an ongoing process.
 Embracing digital minimalism isn't about depriving yourself; it's about being intentional with your digital consumption. By taking control of your digital environment, you'll find more clarity, reduce stress, and ultimately create more space for what truly matters in your life.
 
 What's one area of your digital life you're going to tackle first? Let us know in the comments below!
-
-## Bye

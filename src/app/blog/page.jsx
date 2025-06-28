@@ -12,8 +12,8 @@ export default async function Blog() {
                 </h2>
                 <p>
                     I have social media but I don't use it. This will be my form of social
-                    media. I will post whatever I want whenever I feel like it. It can be
-                    a <span>random thought</span>, regurgitating something I am{' '}
+                    media. I will post whatever, whenever. It can be a{' '}
+                    <span>random thought</span>, regurgitating something I am{' '}
                     <span>studying</span>, whatever it may be.
                 </p>
                 <p>
@@ -24,11 +24,17 @@ export default async function Blog() {
             </aside>
             <div className="content">
                 {posts.map(post => (
-                    <Link href={`/blog/${post.slug}`} key={post.slug}>
-                        <div>
-                            <h2>{post.title}</h2>
+                    <Link
+                        href={`/blog/${post.slug}`}
+                        className="blog-link"
+                        key={post.slug}
+                    >
+                        <div className="card">
+                            <h2>
+                                <span>{post.title}</span>
+                            </h2>
+                            <p className="blog-date">{post.date}</p>
                             <p>{post.info}</p>
-                            <small>{post.date}</small>
                         </div>
                     </Link>
                 ))}
