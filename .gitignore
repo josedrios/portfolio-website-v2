@@ -52,3 +52,5 @@ next-env.d.ts
 /yarn.lock
 /pnpm-lock.yaml
 
+# blog markdowns
+content/blog/*.md

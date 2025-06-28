@@ -1,0 +1,28 @@
+.toc {
+    display: flex;
+    flex-direction: column;
+}
+
+.toc-links {
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+
+    &.indented {
+        margin-left: $spacing-md;
+    }
+
+    p {
+        margin-right: $spacing-xs;
+        padding: 0;
+    }
+
+    .toc-links-body a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $primary-color;
+        }
+    }
+}

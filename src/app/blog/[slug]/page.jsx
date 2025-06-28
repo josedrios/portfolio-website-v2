@@ -5,18 +5,47 @@ import { getPostBySlug, getAllPosts } from '@/lib/blog';
 // get all slugs -> next.js pre-renders the slug page on build -> saves as static file
 // for faster loads on runtime
 export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+    const posts = await getAllPosts();
+    return posts.map(post => ({ slug: post.slug }));
 }
 
 export default async function BlogPost({ params }) {
-  const post = await getPostBySlug(params.slug);
+    const resolvedParams = await params;
+    const post = await getPostBySlug(resolvedParams.slug);
 
-  return (
-    <article>
-      <h1>{post.title}</h1>
-      <p>{post.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-    </article>
-  );
+    return (
+        <main id="blog-post-page">
+            <article className="content">
+                <h1>{post.title}</h1>
+                <p className="blog-date">{post.date}</p>
+                <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+            </article>
+            <aside className="toc">
+                <h2>
+                    <span>|</span>Table of Contents
+                </h2>
+                {post.headings.map(heading => (
+                    <div
+                        className={`toc-links ${heading.level === 3 ? 'indented' : ''}`}
+                        key={heading.title}
+                    >
+                        <p>
+                            <span>*</span>
+                        </p>
+                        <div className="toc-links-body">
+                            <a
+                                href={`#${heading.title
+                                    .toLowerCase()
+                                    .replace(/\s+/g, '-')
+                                    .replace(/[^a-z0-9\s-]/g, '')
+                                    .replace(/^-+|-+$/g, '')}`}
+                            >
+                                {heading.title}
+                            </a>
+                        </div>
+                    </div>
+                ))}
+            </aside>
+        </main>
+    );
 }

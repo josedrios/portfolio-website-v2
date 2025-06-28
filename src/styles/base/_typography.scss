@@ -103,6 +103,10 @@ span {
     margin-bottom: 0px;
 }
 
+li {
+    margin-left: $spacing-md;
+}
+
 li::before {
     position: relative;
     bottom: 3px;
