@@ -15,7 +15,7 @@
     &:hover {
         // Used this color because it is a mix of tha background
         // color with a super transparent overlay of the grid color
-        background-color: #e4eada;
+        background-color: $background-grid-tint;
     }
 
     .blog-card-date {
@@ -84,6 +84,61 @@
 @media (max-width: 800px) {
     .share-post-link {
         margin: 0 0;
+    }
+}
+
+.back-to-top {
+    text-align: end;
+    a {
+        font-size: inherit;
+    }
+}
+
+pre {
+    background-color: rgba(133, 195, 245, 0.25);
+    padding: $spacing-md;
+    padding-bottom: $spacing-md;
+    margin-bottom: calc($spacing-md - 0px);
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::after {
+        position: absolute;
+        // the p aligned with the background 
+        // grid, making it hard to read
+        right: calc($spacing-xs + 6px);
+        top: $spacing-xs;
+        content: 'copy';
+        color: $dark-grid-color;
+        font-size: $font-small;
+    }
+
+    code {
+        color: $dark-grid-color;
+        line-height: 20px;
+        text-wrap: wrap;
+    }
+}
+
+blockquote {
+    border-left: 2px solid $primary-color;
+    padding-left: $spacing-xs;
+    margin-left: $spacing-xs;
+    font-style: italic;
+    margin-bottom: calc($spacing-md - 0.5px);
+
+    p {
+        padding-bottom: 16px;
+    }
+
+    li::before {
+        content: '-';
+        text-align: center;
+        display: inline-block;
+        color: black;
     }
 }
 

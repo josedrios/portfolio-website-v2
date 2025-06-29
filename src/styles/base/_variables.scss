@@ -3,12 +3,16 @@ $background-color: #fcf4d4;
 $grid-color: rgba(133, 195, 245, 0.8);
 $primary-color: rgb(255, 102, 0);
 
+// OTHER COLORS
+$dark-grid-color: rgb(50, 135, 200);
+$background-grid-tint: #e4ead8;
+
 // SPACINGS
 $spacing-unit: 20px;
 
 // add or remove if needed
-$spacing-xs: calc(.25 * $spacing-unit);
-$spacing-sm: calc(.5 * $spacing-unit);
+$spacing-xs: calc(0.25 * $spacing-unit);
+$spacing-sm: calc(0.5 * $spacing-unit);
 $spacing-md: $spacing-unit;
 $spacing-lg: calc(1.5 * $spacing-unit);
 $spacing-xl: calc(2 * $spacing-unit);

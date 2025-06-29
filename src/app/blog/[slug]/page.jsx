@@ -2,6 +2,7 @@ import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import ScrollToHeader from '@/util/scrollToHeader';
 import ShareLink from '../../../components/ShareLink';
 import { useShortDate } from '@/util/dateUtil';
+import CopyCode from '@/util/CopyCode';
 
 // On build, all slugs (or posts in this case) will be served as static files at runtime
 // My interpretation of the flow of these slugs:
@@ -24,9 +25,8 @@ export default async function BlogPost({ params }) {
                     By Jose D. Rios ({useShortDate(post.date)}){' '}
                     <span>{post.readTime} min read</span>
                 </p>
-                <p></p>
-
                 <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                <CopyCode />
             </article>
             <aside className="toc">
                 <h2>
