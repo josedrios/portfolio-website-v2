@@ -34,8 +34,8 @@ export default async function Blog() {
                             <h2>
                                 <span>{post.title}</span>
                             </h2>
-                            <p className="blog-info">{post.info}</p>
-                            <p className="blog-date">{useMediumDate(post.date)}</p>
+                            <p className="blog-card-info">{post.info}</p>
+                            <p className="blog-card-date">{useMediumDate(post.date)}</p>
                         </div>
                     </Link>
                 ))}

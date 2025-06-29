@@ -13,7 +13,7 @@ export default function ScrollToHeader({ heading }) {
 
     return (
         <div
-            className={`toc-links ${heading.level === 3 ? 'indented' : ''}`}
+            className={`toc-link ${heading.level === 3 ? 'indented' : ''}`}
         >
             <p>
                 <span>*</span>

@@ -31,6 +31,8 @@ export async function getPostBySlug(slug) {
         const filePath = path.join(blogDir, `${slug}.md`);
         const fileContent = fs.readFileSync(filePath, 'utf8');
         const { data, content } = matter(fileContent);
+        const wordCount = content.trim().split(/\s+/).length;
+        const readTime = Math.ceil(wordCount / 200);
         const processedContent = await remark()
             .use(remarkParse)
             .use(remarkRehype)
@@ -62,6 +64,7 @@ export async function getPostBySlug(slug) {
             contentHtml,
             ...data,
             headings,
+            readTime
         };
     } catch (err) {
         redirect('/could-not-find-blog-post');
