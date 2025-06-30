@@ -20,7 +20,7 @@ body {
     text-align: center;
     // Used relatively the same color as for the grid but darker
     // so there is more contrast for better readability
-    color: rgb(50, 135, 200);
+    color: $dark-grid-color;
     margin: $spacing-sm auto;
 }
 

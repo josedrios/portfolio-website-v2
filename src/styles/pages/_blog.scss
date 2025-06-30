@@ -15,7 +15,7 @@
     &:hover {
         // Used this color because it is a mix of tha background
         // color with a super transparent overlay of the grid color
-        background-color: $background-grid-tint;
+        background-color: $background-grid-shade;
     }
 
     .blog-card-date {
@@ -95,13 +95,14 @@
 }
 
 pre {
-    background-color: rgba(133, 195, 245, 0.25);
+    background-color: $grid-tint;
     padding: $spacing-md;
     padding-bottom: $spacing-md;
     margin-bottom: calc($spacing-md - 0px);
     position: relative;
 
     &:hover {
+        background-color: $darker-grid-tint;
         cursor: pointer;
     }
 

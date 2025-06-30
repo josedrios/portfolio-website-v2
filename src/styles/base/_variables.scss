@@ -5,7 +5,10 @@ $primary-color: rgb(255, 102, 0);
 
 // OTHER COLORS
 $dark-grid-color: rgb(50, 135, 200);
-$background-grid-tint: #e4ead8;
+$background-grid-shade: #e4ead8;
+
+$grid-tint: rgba(133, 195, 245, 0.25);
+$darker-grid-tint: rgba(133, 195, 245, 0.5);
 
 // SPACINGS
 $spacing-unit: 20px;

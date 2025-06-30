@@ -1,138 +1,138 @@
 [
     {
         "phrase": "wisdom cap",
-        "path": "/images/wizard_hat.png"
+        "path":"/images/overlays/wizard_hat.png"
     },
     {
         "phrase": "\"grid paper website\"",
-        "path": "/images/light_bulb.png"
+        "path":"/images/overlays/light_bulb.png"
     },
     {
         "phrase": "weird fishes",
-        "path": "/images/headphones.png"
+        "path":"/images/overlays/headphones.png"
     },
     {
         "phrase": "tony tony",
-        "path": "/images/chopper_hat.png"
+        "path":"/images/overlays/chopper_hat.png"
     },
     {
         "phrase": "havent played yet",
-        "path": "/images/kratos_face_paint.png"
+        "path":"/images/overlays/kratos_face_paint.png"
     },
     {
         "phrase": "me 24/7",
-        "path": "/images/halo.png"
+        "path":"/images/overlays/halo.png"
     },
     {
         "phrase": "jose d. rios",
-        "path": "/images/luffy.png"
+        "path":"/images/overlays/luffy.png"
     },
     {
         "phrase": "my goat",
-        "path": "/images/kamina.png"
+        "path":"/images/overlays/kamina.png"
     },
     {
         "phrase": "one piece of advice",
-        "path": "/images/doffys_glasses.png"
+        "path":"/images/overlays/doffys_glasses.png"
     },
     {
         "phrase": "be open minded",
-        "path": "/images/open_brain.png"
+        "path":"/images/overlays/open_brain.png"
     },
     {
-        "phrase": "louises burgers",
-        "path": "/images/louise_hat.png"
+        "phrase": "louise's burgers",
+        "path":"/images/overlays/louise_hat.png"
     },
     {
         "phrase": "i look quiet flush",
-        "path": "/images/plunger_hat.png"
+        "path":"/images/overlays/plunger_hat.png"
     },
     {
         "phrase": "growth mindset",
-        "path": "/images/single_leaf_hat.png"
+        "path":"/images/overlays/single_leaf_hat.png"
     },
     {
         "phrase": "party at josedrios.com",
-        "path": "/images/party_hat.png"
+        "path":"/images/overlays/party_hat.png"
     },
     {
         "phrase": "say that one more time",
-        "path": "/images/big_ears.png"
+        "path":"/images/overlays/big_ears.png"
     },
     {
         "phrase": "maceta on maceta",
-        "path": "/images/pot.png"
+        "path":"/images/overlays/pot.png"
     },
     {
         "phrase": "my bed head",
-        "path": "/images/afro.png"
+        "path":"/images/overlays/afro.png"
     },
     {
         "phrase": "cosplaying MGS snake",
-        "path": "/images/ninja.png"
+        "path":"/images/overlays/ninja.png"
     },
     {
         "phrase": "bonsai lover",
-        "path": "/images/jet_face_metal.png"
+        "path":"/images/overlays/jet_face_metal.png"
     },
     {
         "phrase": "arg",
-        "path": "/images/eye_patch.png"
+        "path":"/images/overlays/eye_patch.png"
     },
     {
         "phrase": "i need hands!",
-        "path": "/images/chef_hat.png"
+        "path":"/images/overlays/chef_hat.png"
     },
     {
         "phrase": "where's my super suit",
-        "path": "/images/frozone.png"
+        "path":"/images/overlays/frozone.png"
     },
     {
     "phrase": "you're a developer harry!",
-    "path": "/images/harry_potter.png"
+    "path":"/images/overlays/harry_potter.png"
   },
   {
     "phrase": "no one move ...",
-    "path": "/images/crosshair.png"
+    "path":"/images/overlays/crosshair.png"
   },
   {
     "phrase": "me without 2nd breakfast",
-    "path": "/images/devil_horns.png"
+    "path":"/images/overlays/devil_horns.png"
   },
   {
     "phrase": "diamonds at Y5-Y12",
-    "path": "/images/miner_cap.png"
+    "path":"/images/overlays/miner_cap.png"
   },
   {
     "phrase": "hat of expert builders",
-    "path": "/images/aviator_hat.png"
+    "path":"/images/overlays/aviator_hat.png"
   },
   {
     "phrase": "dracula de jesus rios",
-    "path": "/images/vampire_teeth.png"
+    "path":"/images/overlays/vampire_teeth.png"
   },
   {
     "phrase": "za blutoth is redy to per",
-    "path": "/images/antenna.png"
+    "path":"/images/overlays/antenna.png"
   },
   {
     "phrase": "COD hitmarker",
-    "path": "/images/arrow.png"
+    "path":"/images/overlays/arrow.png"
   },
   {
     "phrase": "'keep the change'",
-    "path": "/images/crown.png"
+    "path":"/images/overlays/crown.png"
   },
   {
-    "phrase": "idk what write for this",
-    "path": "/images/underwear.png"
+    "phrase": "idk what to write for this",
+    "path":"/images/overlays/underwear.png"
   },
   {
-    "phrase": "jose * jose",
-    "path": "/images/smaller_head.png"
+    "phrase": "pow(jose, 2)",
+    "path":"/images/overlays/smaller_head.png"
   },
   {
     "phrase": "spiderman pov",
-    "path": "/images/upsidedown_face.png"
+    "path":"/images/overlays/upsidedown_face.png"
   }
 ]

@@ -4,8 +4,9 @@ import {
     LeftArrowIcon,
     RightArrowIcon,
     XIcon,
-    LinkIcon
+    LinkIcon,
 } from '@/components/Icons';
+import PinnedImage from '@/components/PinnedImage';
 
 export default function DesignSystem() {
     return (
@@ -72,7 +73,11 @@ function Font() {
             </p>
             <p>
                 If you also want to utilize this font you can find it{' '}
-                <a href="https://commitmono.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://commitmono.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     here
                 </a>
                 . The website <span>Eigil Nikolajsen</span> made for this font is
@@ -92,9 +97,7 @@ function Logo() {
                 website's <span>individuality</span>. The best way I found I can do this
                 was to make a doodle of myself as the logo.
             </p>
-            <p>
-                <i>INSERT LOGO FACE IMAGE</i>
-            </p>
+            <PinnedImage imagePath="/images/base.png" height="100px" />
             <p>
                 A fun feature that I wanted to include was variation in the logo by adding
                 overlays to it when clicked as well as pairing it with a simple phrase. I
@@ -106,10 +109,7 @@ function Logo() {
                 <a href="https://krita.org/en/" target="_blank" rel="noopener noreferrer">
                     here
                 </a>
-                . Take a look at some of my favorite logo overlays:
-            </p>
-            <p>
-                <i>INSERT LOGO OVERLAY IMAGES</i>
+                .
             </p>
         </div>
     );
@@ -206,7 +206,11 @@ function Icons() {
             <p>
                 Icons were rather straight forward, I kept them within the size of a
                 single grid cell. I utilized this{' '}
-                <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://react-icons.github.io/react-icons/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     website
                 </a>{' '}
                 for icons, using only the <span>Lucide</span> icons for consistency.

@@ -1,0 +1,56 @@
+.pinned-image-container {
+    position: relative;
+    width: fit-content;
+    padding-top: calc($spacing-md * 2);
+    margin: 0 auto;
+}
+
+.pinned-image {
+    background: rgb(255, 223, 78);
+    width: fit-content;
+    overflow: visible !important;
+    padding: $spacing-sm $spacing-sm;
+    // I removed 4px from the bottom padding to make it align with the
+    // grid because the border adds height to this component
+    padding-bottom: calc($spacing-sm - 4px);
+    margin: 0 $spacing-sm;
+    margin-bottom: $spacing-md;
+    font-size: $spacing-md;
+
+    border: 2px solid black;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius: 15px 255px;
+}
+
+.pinned-image.lined.thick {
+    border: solid 3px #41403e;
+}
+.pinned-image.dotted.thick {
+    border: dotted 3px #41403e;
+}
+.pinned-image.dashed.thick {
+    border: dashed 3px #41403e;
+}
+.pinned-image.lined.thin {
+    border: solid 2px #41403e;
+}
+.pinned-image.dotted.thin {
+    border: dotted 2px #41403e;
+}
+.pinned-image.dashed.thin {
+    border: dashed 2px #41403e;
+}
+
+.pin-overlay {
+    height: 50px;
+    position: absolute;
+    top: $spacing-sm;
+    right: 0px;
+}
+
+// Thank you to the stack overflow post I saw regarding
+// how to make 'sketched/drawn' borders: 
+
+// https://stackoverflow.com/questions/43694588/can-i-use-css-to-distort-borders-so-they-look-like-sketched
