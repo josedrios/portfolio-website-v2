@@ -1,5 +1,6 @@
 import projectInfo from '@/content/ProjectInfo.json';
 import { ExternalLinkIcon } from '@/components/Icons';
+import PinnedImage from '@/components/PinnedImage';
 
 export default function Projects() {
     return (
@@ -33,6 +34,9 @@ export default function Projects() {
                             {project.date}
                         </h3>
                         <p>{project.info}</p>
+                        {project.image && (
+                            <PinnedImage imagePath={project.image}/>
+                        )}
                     </div>
                 ))}
                 <p className="small-text" id="projects-footer">

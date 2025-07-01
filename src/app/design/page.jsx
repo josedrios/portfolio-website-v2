@@ -6,7 +6,6 @@ import {
     XIcon,
     LinkIcon,
 } from '@/components/Icons';
-import PinnedImage from '@/components/PinnedImage';
 
 export default function DesignSystem() {
     return (
@@ -97,7 +96,6 @@ function Logo() {
                 website's <span>individuality</span>. The best way I found I can do this
                 was to make a doodle of myself as the logo.
             </p>
-            <PinnedImage imagePath="/images/base.png" height="100px" />
             <p>
                 A fun feature that I wanted to include was variation in the logo by adding
                 overlays to it when clicked as well as pairing it with a simple phrase. I
