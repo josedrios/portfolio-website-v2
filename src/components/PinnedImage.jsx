@@ -30,7 +30,7 @@ export default function PinnedImage({ imagePath }) {
     return (
         <div className="pinned-image-container" style={{ height: snappedHeight }}>
             <img src={imagePath} ref={imgRef} alt="" className="raw-image" />
-            <img src="/images/pin.png" alt="" className="pin-image" />
+            <img src="/images/pin.webp" alt="" className="pin-image" />
         </div>
     );
 }

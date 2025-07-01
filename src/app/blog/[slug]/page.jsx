@@ -17,7 +17,7 @@ export default async function BlogPost({ params }) {
     return (
         <main id="blog-post-page">
             <article className="content">
-                <h1 className='blog-title'>{post.title}</h1>
+                <h1 className="blog-title">{post.title}</h1>
                 <p className="blog-info">
                     By Jose D. Rios ({getShortDate(post.date)}){' '}
                     <span>{post.readTime} min read</span>
@@ -26,14 +26,20 @@ export default async function BlogPost({ params }) {
                 <CopyCode />
             </article>
             <aside className="toc">
-                <h2>
-                    <span>|</span>Table of Contents
-                </h2>
-                <div className="toc-links-container">
-                    {post.headings.map(heading => (
-                        <ScrollToHeader heading={heading} key={heading.title} />
-                    ))}
-                </div>
+                {post.headings.length === 0 ? (
+                    ''
+                ) : (
+                    <>
+                        <h2>
+                            <span>|</span>Table of Contents
+                        </h2>
+                        <div className="toc-links-container">
+                            {post.headings.map(heading => (
+                                <ScrollToHeader heading={heading} key={heading.title} />
+                            ))}
+                        </div>
+                    </>
+                )}
                 <ShareLink />
             </aside>
         </main>

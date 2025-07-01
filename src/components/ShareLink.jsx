@@ -7,7 +7,7 @@ export default function ShareLink() {
             className="share-post-link"
             onClick={() => navigator.clipboard.writeText(window.location.href)}
         >
-            <LinkIcon /> Share
+            <LinkIcon />Share
         </a>
     );
 }

@@ -63,7 +63,7 @@ function LeftHeader() {
                 )}
             </div>
             <div id="icon-container">
-                <img src="/images/base.png" alt="" className="doodle-icon" />
+                <img src="/images/base.webp" alt="" className="doodle-icon" />
                 {imageOverlay !== null ? (
                     <img src={imageOverlay.path} alt="" className="doodle-icon-overlay" />
                 ) : (
