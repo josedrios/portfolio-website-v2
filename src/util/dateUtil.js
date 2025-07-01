@@ -1,5 +1,3 @@
-'use server';
-
 // All dates will come in params like Numeric Format (YYYY-MM-DD)
 
 // Short Date (MM/DD/YY)
@@ -37,7 +35,7 @@ const monthsAbbr = [
     'Dec',
 ];
 
-export async function useShortDate(date) {
+export function getShortDate(date) {
     const year = date.slice(2, 4);
     // the replace function removes leading 0's
     const month = date.slice(5, 7).replace(/^0+/, '');
@@ -46,7 +44,7 @@ export async function useShortDate(date) {
     return month + '/' + day + '/' + year;
 }
 
-export async function useMediumDate(date) {
+export function getMedianDate(date) {
     const year = date.slice(0, 4);
     // the replace function removes leading 0's
     const month = parseInt(date.slice(5, 7).replace(/^0+/, ''), 10);
@@ -55,7 +53,7 @@ export async function useMediumDate(date) {
     return monthsAbbr[month - 1] + " " + day + ', ' + year
 }
 
-export async function useLongDate(date) {
+export function getLongDate(date) {
     const year = date.slice(0, 4);
     // the replace function removes leading 0's
     const month = parseInt(date.slice(5, 7).replace(/^0+/, ''), 10);
