@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useRef, useEffect, useState } from 'react';
 
 export default function PinnedImage({ imagePath }) {
@@ -30,7 +31,7 @@ export default function PinnedImage({ imagePath }) {
     return (
         <div className="pinned-image-container" style={{ height: snappedHeight }}>
             <img src={imagePath} ref={imgRef} alt="" className="raw-image" />
-            <img src="/images/pin.webp" alt="" className="pin-image" />
+            <Image src="/images/pin.webp" alt="" height={50} width={50} className="pin-image" />
         </div>
     );
 }

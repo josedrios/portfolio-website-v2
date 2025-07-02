@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function NotFound() {
     return (
@@ -6,7 +7,7 @@ export default function NotFound() {
             <main id="not-found-page">
                 <div id="not-found-header">
                     <p>4</p>
-                    <img src="/images/base.webp" alt="" />
+                    <Image src="/images/base.webp" alt="" />
                     <p>4</p>
                 </div>
                 <p className="not-found-info">

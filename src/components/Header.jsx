@@ -4,6 +4,7 @@ import OverlayInfo from '@/content/OverlayInfo.json'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Header() {
     return (
@@ -63,9 +64,9 @@ function LeftHeader() {
                 )}
             </div>
             <div id="icon-container">
-                <img src="/images/base.webp" alt="" className="doodle-icon" />
+                <Image src="/images/base.webp" alt="" height={140} width={93} className="doodle-icon" />
                 {imageOverlay !== null ? (
-                    <img src={imageOverlay.path} alt="" className="doodle-icon-overlay" />
+                    <Image src={imageOverlay.path} alt="" height={140} width={93} className="doodle-icon-overlay" />
                 ) : (
                     ''
                 )}
