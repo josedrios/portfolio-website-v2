@@ -7,7 +7,7 @@ export default function NotFound() {
             <main id="not-found-page">
                 <div id="not-found-header">
                     <p>4</p>
-                    <Image src="/images/base.webp" alt="" />
+                    <Image src="/images/base.webp" width={73} height={120} alt="" />
                     <p>4</p>
                 </div>
                 <p className="not-found-info">

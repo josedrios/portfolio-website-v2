@@ -37,6 +37,7 @@ header {
         left: 0;
         bottom: 0;
         pointer-events: none;
+        image-rendering: crisp-edges;
     }
 
     #icon-change-hitbox {
